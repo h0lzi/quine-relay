@@ -77,6 +77,9 @@ apt-get install -y nasm && \
 apt-get install -y neko && \
 apt-get install -y nickle && \
 apt-get install -y ocaml && \
+apt-get install -y libarpack2 && \
+apt-get install -y libcholmod1.7.1 && \
+apt-get install -y liboctave2 && \
 apt-get install -y octave && \
 apt-get install -y open-cobol && \
 apt-get install -y openjdk-6-jdk && \
