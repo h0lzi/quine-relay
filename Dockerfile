@@ -1,7 +1,7 @@
 FROM ubuntu:12.04
 ENV PATH /usr/games:$PATH
 RUN apt-get update 
-RUN apt-get -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" dist-upgrade 
+RUN apt-get -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" dist-upgrade  -y
 RUN apt-get install -y software-properties-common
 RUN add-apt-repository -y ppa:ecere-team/ppa            && \
     add-apt-repository -y ppa:directhex/ppa && \
@@ -9,7 +9,7 @@ RUN add-apt-repository -y ppa:ecere-team/ppa            && \
     add-apt-repository -y ppa:staticfloat/juliareleases && \
     add-apt-repository -y ppa:staticfloat/julia-deps   
 RUN apt-get update
-RUN apt-get -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" dist-upgrade 
+RUN apt-get -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" dist-upgrade -y
 RUN apt-get install -y algol68g && \
 apt-get install -y aplus-fsf && \
 apt-get install -y asymptote && \
