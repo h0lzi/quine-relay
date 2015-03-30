@@ -1,6 +1,6 @@
 FROM ubuntu:12.04
 ENV PATH /usr/games:$PATH
-ENV PATH DEBIAN_FRONTEND=noninteractive
+ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update 
 RUN apt-get -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" dist-upgrade  -y
 RUN apt-get install -y python-software-properties
