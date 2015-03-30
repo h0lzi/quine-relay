@@ -93,6 +93,7 @@ apt-get install -y r-base && \
 apt-get install -y ratfor && \
 apt-get install -y regina-rexx && \
 apt-get install -y rhino && \
+apt-get install -y ruby2.0 && \
 apt-get install -y scala && \
 apt-get install -y scilab && \
 apt-get install -y slsh && \
