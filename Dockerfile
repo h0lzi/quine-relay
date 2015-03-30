@@ -2,7 +2,7 @@ FROM ubuntu:12.04
 ENV PATH /usr/games:$PATH
 RUN apt-get update 
 RUN apt-get -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" dist-upgrade  -y
-RUN apt-get install -y software-properties-common
+RUN apt-get install -y python-software-properties
 RUN add-apt-repository -y ppa:ecere-team/ppa            && \
     add-apt-repository -y ppa:directhex/ppa && \
     add-apt-repository -y ppa:octave/stable && \
