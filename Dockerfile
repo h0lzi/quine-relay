@@ -3,8 +3,6 @@ ENV PATH /usr/games:$PATH
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -y software-properties-common
 RUN add-apt-repository -y ppa:ecere-team/ppa            && \
-    add-apt-repository -y ppa:directhex/ppa && \
-    add-apt-repository -y ppa:octave/stable && \
     add-apt-repository -y ppa:staticfloat/juliareleases && \
     add-apt-repository -y ppa:staticfloat/julia-deps   
 RUN apt-get update
